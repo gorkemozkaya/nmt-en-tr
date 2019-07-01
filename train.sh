@@ -1,8 +1,11 @@
+export TPU_NAME=gorkemozkaya
+#export TPU_NAME="projects/gorkem-tpu/locations/us-central1-a/nodes/gorkemozkaya"
+
 PROBLEM=translate_en_tr
 MODEL=transformer
 HPARAMS=transformer_base
 
-STORAGE_BUCKET=gs://gorkemozkaya
+STORAGE_BUCKET=gs://gorkem-tpu
 
 DATA_DIR=$STORAGE_BUCKET/data_v2
 TMP_DIR=/tmp/tmp
@@ -21,5 +24,5 @@ t2t-trainer \
   --train_steps=250000 \
   --eval_steps=25000 \
   --use_tpu=True \
-  --tpu_name=gorkemozkaya \
+  --tpu_name=$TPU_NAME \
   --keep_checkpoint_max=20
