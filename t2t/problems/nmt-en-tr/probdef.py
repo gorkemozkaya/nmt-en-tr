@@ -95,14 +95,14 @@ class TranslateEnTr(text_problems.Text2TextProblem):
 
     # PART 1 - OPEN SUBTITLES CORPUS
     with open(en_tr_corpus_dir + 'OpenSubtitles.en-tr.en') as f_en, open(
-            en_tr_corpus_dir + 'OpenSubtitles.en-tr.en') as f_tr:
+            en_tr_corpus_dir + 'OpenSubtitles.en-tr.tr') as f_tr:
         data_iterator = zip(f_en, f_tr)
         t = 0
         for sentence_input, sentence_target in data_iterator:
             t += 1
             source = preprocess(sentence_input)
             target = preprocess(sentence_target)
-            if t % 100 == 0:  # downsampling
+            if t % 50 == 0:  # downsampling
                 yield {
                     "inputs": source,
                     "targets": target,
