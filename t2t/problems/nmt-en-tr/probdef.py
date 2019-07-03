@@ -163,7 +163,7 @@ class TranslateEnTr(text_problems.Text2TextProblem):
       Returns:
         an integer or None
       """
-      return 15
+      return 8
 
  # END: Overridable methods.
 
