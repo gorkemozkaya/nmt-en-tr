@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 export EN_TR_CORPUS_DIR=/Users/gorkemozkaya/Downloads/nmt_june_2019/en-tr.txt/
 
-PROBLEM=translate_en_tr
+PROBLEM=translate_tr_en
 MODEL=transformer
 HPARAMS=transformer_base
 
-DATA_DIR=/tmp/t2t/data
-TMP_DIR=/tmp/tmp
+DATA_DIR=/tmp/t2t/data_tr_en
+TMP_DIR=/tmp/tmp_tr_en
 TRAIN_DIR=/tmp/t2t/train
 USR_DIR=/Users/gorkemozkaya/Projects/NMT/nmt-en-tr/t2t/problems/nmt-en-tr
 
