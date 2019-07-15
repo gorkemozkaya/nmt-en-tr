@@ -2,7 +2,7 @@
 
 This repo contains *a very early version* of a pair of NMT models between English and Turkish (in both directions). One can download the pre-trained models from the `releases` section and use the Jupyter notebook in the root directory as a reference. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gorkemozkaya/nmt-en-tr/blob/master/Turkish_English_NMT.ipynb)
 
-The models are trained on Google Cloud TPU's using Google's [tensor2tensor](https://github.com/tensorflow/tensor2tensor) library. 
+The models are trained on Google Cloud TPU's using Google's [tensor2tensor](https://github.com/tensorflow/tensor2tensor) library, which in turn is based on [tensorflow](https://www.tensorflow.org). The [Transformer](https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf) architecture was used, which is the state-of-the-art for Neural Machine Translation. 
 
 ## Acknowledgements
 * TFRC Tensorflow Research Cloud program for cloud TPU hours 
