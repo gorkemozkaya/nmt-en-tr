@@ -8,7 +8,7 @@ HPARAMS=transformer_base
 DATA_DIR=/tmp/t2t/data
 TMP_DIR=/tmp/tmp
 TRAIN_DIR=/tmp/t2t/train
-USR_DIR=/Users/gorkemozkaya/Projects/NMT/nmt-en-tr/t2t/problems/nmt-en-tr
+USR_DIR=/Users/gorkemozkaya/Projects/NMT/nmt-en-tr/nmt_en_tr/
 
 mkdir -p $DATA_DIR $TMP_DIR $TRAIN_DIR
 

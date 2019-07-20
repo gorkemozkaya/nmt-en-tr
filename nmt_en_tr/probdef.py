@@ -102,7 +102,7 @@ class TranslateEnTr(text_problems.Text2TextProblem):
             t += 1
             source = preprocess(sentence_input)
             target = preprocess(sentence_target)
-            if t % 50 == 0:  # downsampling
+            if t % 10 == 0:  # downsampling
                 yield {
                     "inputs": source,
                     "targets": target,
@@ -119,6 +119,30 @@ class TranslateEnTr(text_problems.Text2TextProblem):
               "targets" : target,
             }
 
+
+    # PART 3 - TED TALKS
+    with open(en_tr_corpus_dir + 'TED2013.en-tr.en') as f_en, open(en_tr_corpus_dir + 'TED2013.en-tr.tr') as f_tr:
+        data_iterator = zip(f_en, f_tr)
+        for sentence_input, sentence_target in data_iterator:
+            source = preprocess(sentence_input)
+            target = preprocess(sentence_target)
+
+            yield {
+              "inputs"  : source,
+              "targets" : target,
+            }
+
+    # PART 4 - BIANET
+    with open(en_tr_corpus_dir + 'bianet-entr-en.txt') as f_en, open(en_tr_corpus_dir + 'bianet-entr-tr.txt') as f_tr:
+        data_iterator = zip(f_en, f_tr)
+        for sentence_input, sentence_target in data_iterator:
+            source = preprocess(sentence_input)
+            target = preprocess(sentence_target)
+
+            yield {
+              "inputs"  : source,
+              "targets" : target,
+            }
 
 
   # END: Methods we should override.
