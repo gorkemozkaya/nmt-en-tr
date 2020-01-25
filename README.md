@@ -6,7 +6,7 @@ The models are trained on Google Cloud TPU's using Google's [tensor2tensor](http
 
 ## Acknowledgements
 * TFRC Tensorflow Research Cloud program for cloud TPU hours 
-* [Opus parallel corpus](http://opus.nlpl.eu) for making parallel corpus available
+* [Opus parallel corpus](http://opus.nlpl.eu) for making the Turkish/English parallel corpus available
 * [Open Subtitles](http://www.opensubtitles.org) As being the original source of the movie subtitles parallel corpus. Also see 
 ```
 P. Lison and J. Tiedemann, 2016, OpenSubtitles2016: Extracting Large Parallel Corpora from Movie and TV Subtitles. 
