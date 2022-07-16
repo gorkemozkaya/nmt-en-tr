@@ -2,7 +2,7 @@
 Gorkem Ozkaya
 
 
-This repo contains *a very early version* of a pair of NMT models between English and Turkish (in both directions). One can download the pre-trained models from the `releases` section and use the Jupyter notebook in the root directory as a reference. 
+This repo contains a pair of NMT models between English and Turkish (in both directions). One can download the pre-trained models from the `releases` section and use the Jupyter notebook in the root directory as a reference. 
 
 * TF1 version: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gorkemozkaya/nmt-en-tr/blob/master/Turkish_English_NMT.ipynb) 
 * TF2 version: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/gorkemozkaya/nmt-en-tr/blob/master/Turkish_English_NMT_tf2.ipynb)
