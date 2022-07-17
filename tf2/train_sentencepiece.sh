@@ -1,3 +1,5 @@
+# train a sentencepiece tokenizer 
+
 export PYTHONPATH=$PYTHONPATH:/content/nmt-en-tr/models:/content/nmt-en/tr/datasets
 python3 /content/nmt-en-tr/models/official/nlp/data/train_sentencepiece.py \
   --character_coverage=1.0 \
